@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+
+
+
+
+<body>
+
+<div>
+    {%include 'navbar.html'%}
+
+</div>
+{% block content%}
+    
+
+    <div class="container">
+
+        <div class="app-content">
+            <div class="app-container">
+
+                <div class="app-content">
+                    <div class="app-sidebar">
+                        
+                    </div>
+                    <div class="projects-section">
+                    
+                        <div class="projects-section-header">
+
+
+                            <h2>welcome to <span style="color: #f4432b;"> School</span> Assembly 
+
+                        </div>
+
+
+                        <div class="project-boxes jsGridViewofprograms" id="load_home" style="overflow: auto; padding:50px 50px;display: flex;flex-direction: column;">
+                            <div class="containers">
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <img class="tilt"
+                                                src="{{url_for('static',filename='/image/money-transfer.png')}}" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <p>here you will add students using face detection
+                                            </p>
+                                            <a href="/video_page">Add student</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <img class="tilt" src="{{url_for('static',filename='/image/card.png')}}"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <p>here you will recognize face and add in attendece
+                                            </p>
+                                            <a href="/recognize_page">recognize</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="face face1">
+                                        <div class="content">
+                                            <img src="{{url_for('static',filename='/image/loan.png')}}">
+
+                                        </div>
+                                    </div>
+                                    <div class="face face2">
+                                        <div class="content">
+                                            <p>here is the table of attendence_sheet
+                                            </p>
+                                            <a href="/attendence_sheet">open</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+    
+                     
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    {%endblock%}
+
+
+
+
+</body>
+
+</html>

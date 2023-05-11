@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+
+<style>
+    .button {
+margin-top: 10px;
+width: 90%;
+height: 50px;
+background: #4787e9;
+color: #fff;
+text-decoration: none;
+font-size: 14px;
+padding: 12px  150px;
+border-radius: 5px;
+box-shadow: 0px 5px 0px #1e56f1;
+transition: .3s ease;
+border: none;
+font-family: 'Poppins';
+display: flex;
+justify-content: center;
+
+}
+.button:hover{
+background: #3c7ad8;
+box-shadow: 0px 3px 0px #1e56f1;
+cursor: pointer;
+transform: scale(0.95);
+}
+
+.button:active {
+transform: scale(0.9);
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  
+    <script>
+        setTimeout(function () {
+    
+            $('.button').show();
+            
+           
+        }, 6000); 
+    </script>
+</head>
+
+<body>
+    <div>
+        {%include 'navbar.html'%}
+
+    </div>
+    {%block container%}
+    <div class="container">
+
+        <div class="app-content">
+            <div class="app-container">
+
+                <div class="app-content">
+                    <div class="app-sidebar">
+
+                    </div>
+                    <div class="projects-section">
+                        <div class="projects-section-header">
+
+
+                            <h2>welcome to <span style="color: #f4432b;"> School</span> Assembly
+
+                        </div>
+                        <div class="student_video">
+
+
+                            <img src="{{url_for('recognize') }}" width="90%">
+
+
+                            <a href="/userpage" class="button" style="display:none;">Back</a>
+                            
+                           
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    {%endblock%}
+</body>
+
+</html>

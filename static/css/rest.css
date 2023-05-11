@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+
+body {
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+}
+*::selection {
+    background: #2b3dda;
+    color: #fff;
+  }
+  
+  html {
+    font-size: 62.5%;
+    
+  }
+ 
+
+
+/* navbar starts */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(146, 161, 176, 0.3);
+}
+section {
+
+  padding: 2rem 9%;
+}
+
+.heading {
+  font-size: 3.5rem;
+  color: rgba(32, 32, 32, 0.178);
+  font-weight: 800;
+  text-align: center;
+}
+.heading span {
+  color: rgb(78, 78, 78);
+}
+header .logo {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  position: absolute;
+  left: 90px;
+}
+
+/* The element to apply the animation to */
+@keyframes example {
+  0%   {color: rgb(101, 52, 52);}
+  25%  {color: rgb(92, 92, 55);}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+.logo  {
+  
+  
+  animation-name: example;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  
+}
+header .header-name{
+    
+    color:#f4432b;
+}
+
+header .logo i {
+  font-size: 2.2rem;
+}
+
+header .navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar a {
+  margin-left: 2.5rem;
+}
+header .navbar  a {
+  font-size: 1.57rem;
+  color: #0e2431;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+  transition: 0.2s;
+}
+header .navbar  a.active,
+header .navbar a:hover {
+  color: #f4432b;
+  border-bottom: 0.2rem solid #f4432b;
+  padding: 0.5rem 0;
+}
+
+
+
+.input_container{
+    display: flex;
+    flex-direction: row;
+}
+.input_container .input_text{
+    color: #0e2431;
+    
+    border: 1px solid #f4432b;
+    
+    height: 30px;
+    
+   
+}
+.input_submit{
+  
+    width: 35px;
+  border: 1px solid #f4432b;
+    
+}.input_submit:hover{
+  background-color: #f4432b;
+  color: white;
+  cursor: pointer;
+}

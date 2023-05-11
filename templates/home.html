@@ -1,0 +1,65 @@
+
+ 
+    <title>School Assembly</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/loginpage.css') }}">
+    
+</head>
+
+<body>
+    <div>
+        {%include 'navbar.html'%}
+    </div>
+<div>
+    {%block content%}
+ 
+    <section class="home" id="home">
+
+
+        <div class="content">
+            <p> <span> the world together <br> with innovative payment experiences </span></p>
+            <h2>How easily can i make <br>
+                Payments</h2>
+            <p>mabile transition are driving the growth <br> of the banking sector as you read this. We enables digital
+                payments to serve payment <br> needs of tomorrow,today.</p>
+         
+
+
+        </div>
+        
+
+            <div class="usercontainer">
+                
+        
+                <form action="/login" method="post">
+                  
+                    
+                    
+                    
+                    
+                    <div class="mainiterms">
+                        <p style="color: rgb(135, 35, 22);">{{error}}</p>
+                        <div>
+                            
+                            <label for="account_no">Username</label>
+                            <input type="text" placeholder="Username" id="account_no" name="username">
+                        </div>
+                        <div>
+                            
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Password" id="password" name="password">
+                        </div>
+                        
+                        <input type="submit" value="Submit" class="button">
+                       
+                        
+                    </div>
+                    
+                </form>
+            </div>
+        
+        </section>
+    {%endblock%}
+</div>
+</body>
+

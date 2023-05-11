@@ -1,0 +1,5 @@
+flask
+cv2
+flask_moment
+pandas
+sklearn
